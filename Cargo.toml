@@ -1,0 +1,14 @@
+[package]
+name = "chatterd"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = { version = "0.8.9", features = ["tokio", "json"] }
+chrono = "0.4.45"
+dotenv = "0.15.0"
+jsonwebtoken = { version = "11.0.0", features = ["rust_crypto"] }
+password-auth = { version = "1.0.0", features = ["argon2"] }
+serde = { version = "1.0.229", features = ["derive"] }
+sqlx = { version = "0.9.0", features = ["json", "macros", "derive", "chrono", "sqlite", "runtime-tokio", "uuid"] }
+tokio = { version = "1.53.1", features = ["full"] }
